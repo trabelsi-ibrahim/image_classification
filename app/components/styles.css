@@ -1,0 +1,26 @@
+/* styles.css */
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-float {
+    animation: floatAnimation 3s infinite ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .prediction-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+}
